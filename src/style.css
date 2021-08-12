@@ -42,3 +42,12 @@ input {
   justify-content: space-between;
   margin: 5px;
 }
+.complete{
+
+  font-size: 18;
+  background-color: green;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  
+}

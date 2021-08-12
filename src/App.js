@@ -79,6 +79,7 @@ const App = () => {
           {data.description}
           {data.dueDate}
 
+
           <div className="button-style">
           <button onClick={() => deleteTodo(data.id)}>Delete</button>
           {
