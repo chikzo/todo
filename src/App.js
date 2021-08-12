@@ -24,27 +24,29 @@ const App = () => {
     setTodo("")
     console.log(todoList);
 
-    function deleteTodo(id){
+   
+  }
 
-      let updatedList = [...todoList].filter((todo)=> todo.id !== id)
-      setList(updatedList)
+  function deleteTodo(id){
 
-    }
+    let updatedList = [...todoList].filter((todo)=> todo.id !== id)
+    setList(updatedList)
 
-    function completeTodo(id){
+  }
 
-      let updatedList=[...todoList].map((todo) => {
+  function completeTodo(id){
 
-        if(todo.id === id){
-          todo.complete = !todo.complete;
-        }
+    let updatedList=[...todoList].map((todo) => {
 
-        return todo; 
-      })
+      if(todo.id === id){
+        todo.complete = !todo.complete;
+      }
 
-      setList(updatedList)
-      console.log(todoList);
-    }
+      return todo; 
+    })
+
+    setList(updatedList)
+    console.log(todoList);
   }
   return (
     <div>
@@ -84,7 +86,7 @@ const App = () => {
           <button onClick={() => deleteTodo(data.id)}>Delete</button>
           {
             data.complete === true
-            ? (<button onClick={() => completeTodo(data.id)}>Completed</button>)
+            ? (<button className = "complete" onClick={() => completeTodo(data.id)}>Completed</button>)
             : (<button onClick={() => completeTodo(data.id)}>Complete</button>)
 
           }
