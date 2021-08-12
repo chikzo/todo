@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  color: mediumseagreen;  
+}
+
+button{
+  
+  font-size: 18;
+  background-color: tomato;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+
+    font-size: 20px;
+    padding: 4px 8px;
+    flex-grow: 1;
+    margin: 10px;
+    border-style: solid;
+
+}
+
+.todo {
+    width: 500px;
+    margin: 60px auto;
+}
+.list-style{
+  display: flex;
+  flex-direction: column;
+}
+
+.button-style{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
